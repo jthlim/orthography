@@ -1,5 +1,6 @@
 {
   "rules": [],
   "aliases": [],
-  "auto-suffix": []
+  "auto-suffix": [],
+  "reverse-auto-suffix": []
 }

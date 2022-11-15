@@ -29,7 +29,7 @@
       "replacement": "\\1es"
     },
     {
-      "pattern": "^(.*(?:oa|ea|i|ee|oo|au|ou|l|n|(?<![gin]a)r|t)ch) \\^s$",
+      "pattern": "^(.*(?:oa|ea|i|ee|oo|au|ou|l|n|r|t)ch) \\^s$",
       "replacement": "\\1es"
     },
     {
@@ -175,6 +175,80 @@
     {
       "key": "-G",
       "suffix": "{^ing}"
+    }
+  ],
+  "reverse-auto-suffix": [
+    {
+      "key": "-Z",
+      "suppressMask": "-T",
+      "pattern": "^(.+)s$",
+      "replacement": "\\1"
+    },
+    {
+      "key": "-Z",
+      "suppressMask": "-T",
+      "pattern": "^(.+)es$",
+      "replacement": "\\1"
+    },
+    {
+      "key": "-Z",
+      "suppressMask": "-T",
+      "pattern": "^(.+)ies$",
+      "replacement": "\\1y"
+    },
+    {
+      "key": "-S",
+      "suppressMask": "-D",
+      "pattern": "^(.+)s$",
+      "replacement": "\\1"
+    },
+    {
+      "key": "-S",
+      "suppressMask": "-D",
+      "pattern": "^(.+)es$",
+      "replacement": "\\1"
+    },
+    {
+      "key": "-S",
+      "suppressMask": "-D",
+      "pattern": "^(.+)ies$",
+      "replacement": "\\1y"
+    },
+    {
+      "key": "-D",
+      "suppressMask": "-S",
+      "pattern": "^(.+)ed$",
+      "replacement": "\\1"
+    },
+    {
+      "key": "-D",
+      "suppressMask": "-S",
+      "pattern": "^(.+(.))\\2ed$",
+      "replacement": "\\1"
+    },
+    {
+      "key": "-D",
+      "suppressMask": "-S",
+      "pattern": "^(.+e)d$",
+      "replacement": "\\1"
+    },
+    {
+      "key": "-D",
+      "suppressMask": "-S",
+      "pattern": "^(.+)ied$",
+      "replacement": "\\1y"
+    },
+    {
+      "key": "-G",
+      "suppressMask": "",
+      "pattern": "^(.+)ing$",
+      "replacement": "\\1"
+    },
+    {
+      "key": "-G",
+      "suppressMask": "",
+      "pattern": "^(.+(.))\\2ing$",
+      "replacement": "\\1"
     }
   ]
 }
