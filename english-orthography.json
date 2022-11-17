@@ -247,6 +247,12 @@
     {
       "key": "-G",
       "suppressMask": "",
+      "pattern": "^(.+)ing$",
+      "replacement": "\\1e"
+    },
+    {
+      "key": "-G",
+      "suppressMask": "",
       "pattern": "^(.+(.))\\2ing$",
       "replacement": "\\1"
     }
