@@ -9,12 +9,12 @@
       "replacement": "\\1ly"
     },
     {
-      "pattern": "^(.*t)e \\^(ry|ary)$",
+      "pattern": "^(.*t)e \\^(a?ry)$",
       "replacement": "\\1ory"
     },
     {
-      "pattern": "^(.+)m \\^tor(y|ily)$",
-      "replacement": "\\1mator\\2"
+      "pattern": "^(.+)m \\^tor(il)?y$",
+      "replacement": "\\1mator\\2y"
     },
     {
       "pattern": "^(.+)se \\^ar(y|ies)$",
@@ -25,11 +25,11 @@
       "replacement": "\\1cy"
     },
     {
-      "pattern": "^(.*(?:s|sh|x|z|zh)) \\^s$",
+      "pattern": "^(.*(?:sh?|x|zh?)) \\^s$",
       "replacement": "\\1es"
     },
     {
-      "pattern": "^(.*(?:oa|ea|i|ee|oo|au|ou|l|n|r|t)ch) \\^s$",
+      "pattern": "^(.*(?:o[aou]|e[ae]|au|[ilnrt])ch) \\^s$",
       "replacement": "\\1es"
     },
     {
@@ -53,32 +53,32 @@
       "replacement": "\\1tten"
     },
     {
-      "pattern": "^(.+[ae]) \\^e(n|ns)$",
+      "pattern": "^(.+[ae]) \\^e(ns?)$",
       "replacement": "\\1\\2"
     },
     {
-      "pattern": "^(.+)y \\^(ial|ially)$",
-      "replacement": "\\1\\2"
+      "pattern": "^(.+)y \\^ial(ly)?$",
+      "replacement": "\\1ial\\2"
     },
     {
-      "pattern": "^(.+)i \\^if(y|ying|ied|ies|ication|ications)$",
+      "pattern": "^(.+)i \\^if(y(?:ing)?|ie[sd]|ications?)$",
       "replacement": "\\1if\\2"
     },
     {
-      "pattern": "^(.+)ic \\^(ical|ically)$",
+      "pattern": "^(.+)ic \\^ical(ly)?$",
+      "replacement": "\\1ical\\2"
+    },
+    {
+      "pattern": "^(.+)ology \\^ical(ly)?$",
+      "replacement": "\\1ological\\2"
+    },
+    {
+      "pattern": "^(.*)ry \\^ical(ly|ity)?$",
+      "replacement": "\\1rical\\2"
+    },
+    {
+      "pattern": "^(.*l) \\^(ists?)$",
       "replacement": "\\1\\2"
-    },
-    {
-      "pattern": "^(.+)ology \\^ic(al|ally)$",
-      "replacement": "\\1ologic\\2"
-    },
-    {
-      "pattern": "^(.*)ry \\^ica(l|lly|lity)$",
-      "replacement": "\\1rica\\2"
-    },
-    {
-      "pattern": "^(.*[l]) \\^is(t|ts)$",
-      "replacement": "\\1is\\2"
     },
     {
       "pattern": "^(.*)ry \\^ity$",
@@ -97,43 +97,27 @@
       "replacement": "\\1ativ\\2"
     },
     {
-      "pattern": "^(.+)y \\^iz(e|es|ing|ed|er|ers|ation|ations|able|ability)$",
-      "replacement": "\\1iz\\2"
+      "pattern": "^(.+)y \\^i([sz](?:e(?:[sdr]|rs)?|ing|ations?|ab(?:le|ility)))$",
+      "replacement": "\\1i\\2"
     },
     {
-      "pattern": "^(.+)y \\^is(e|es|ing|ed|er|ers|ation|ations|able|ability)$",
-      "replacement": "\\1is\\2"
+      "pattern": "^(.+)al \\^i([sz](?:e(?:[sdr]|rs)?|ing|ations?|ms?|ab(?:le|ility|ilities)))$",
+      "replacement": "\\1ali\\2"
     },
     {
-      "pattern": "^(.+)al \\^iz(e|ed|es|ing|er|ers|ation|ations|m|ms|able|ability|abilities)$",
-      "replacement": "\\1aliz\\2"
+      "pattern": "^(.+)ar \\^i([sz](?:e(?:[sdr]|rs)?|ing|ations?|ms?))$",
+      "replacement": "\\1ari\\2"
     },
     {
-      "pattern": "^(.+)al \\^is(e|ed|es|ing|er|ers|ation|ations|m|ms|able|ability|abilities)$",
-      "replacement": "\\1alis\\2"
+      "pattern": "^(.*[lmnty]) \\^i([sz](?:e(?:[sdr]|rs)?|ing|ations?|ms?|ab(?:le|ility|ilities)))$",
+      "replacement": "\\1i\\2"
     },
     {
-      "pattern": "^(.+)ar \\^iz(e|ed|es|ing|er|ers|ation|ations|m|ms)$",
-      "replacement": "\\1ariz\\2"
-    },
-    {
-      "pattern": "^(.+)ar \\^is(e|ed|es|ing|er|ers|ation|ations|m|ms)$",
-      "replacement": "\\1aris\\2"
-    },
-    {
-      "pattern": "^(.*[lmnty]) \\^iz(e|es|ing|ed|er|ers|ation|ations|m|ms|able|ability|abilities)$",
-      "replacement": "\\1iz\\2"
-    },
-    {
-      "pattern": "^(.*[lmnty]) \\^is(e|es|ing|ed|er|ers|ation|ations|m|ms|able|ability|abilities)$",
-      "replacement": "\\1is\\2"
-    },
-    {
-      "pattern": "^(.+)al \\^olog(y|ist|ists|ical|ically)$",
+      "pattern": "^(.+)al \\^olog(y|ists?|ical(?:ly)?)$",
       "replacement": "\\1olog\\2"
     },
     {
-      "pattern": "^(.+)(ar|er|or) \\^ish$",
+      "pattern": "^(.+)([aeo]r) \\^ish$",
       "replacement": "\\1\\2ish"
     },
     {
@@ -249,6 +233,12 @@
       "suppressMask": "",
       "pattern": "^(.+)ing$",
       "replacement": "\\1e"
+    },
+    {
+      "key": "-G",
+      "suppressMask": "",
+      "pattern": "^(.+)ying$",
+      "replacement": "\\1ie"
     },
     {
       "key": "-G",
