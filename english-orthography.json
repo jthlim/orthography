@@ -25,7 +25,7 @@
       "replacement": "\\1cy"
     },
     {
-      "pattern": "^(.*(?:sh?|x|zh?)) \\^s$",
+      "pattern": "^(.*(?:[sz]h?|x)) \\^s$",
       "replacement": "\\1es"
     },
     {
@@ -61,7 +61,7 @@
       "replacement": "\\1ial\\2"
     },
     {
-      "pattern": "^(.+)i \\^if(y(?:ing)?|ie[sd]|ications?)$",
+      "pattern": "^(.+)[iy] \\^if(y(?:ing)?|ie[sd]|ications?)$",
       "replacement": "\\1if\\2"
     },
     {

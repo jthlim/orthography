@@ -1,0 +1,76 @@
+{
+  "rules": [
+    {
+      "pattern": "^(.+[bcdfghjklmnpqrstuvz])e \\^(able|age|ed|est|ing|ings|ion|ory|ous)$",
+      "replacement": "\\1\\2"
+    },
+    {
+      "pattern": "^(.+[ie])e \\^(e.+)$",
+      "replacement": "\\1\\2"
+    },
+    {
+      "pattern": "^(.+[bcdfghjklmnpqrstvwxz])y \\^s$",
+      "replacement": "\\1ies"
+    },
+    {
+      "pattern": "^(.*(?:[bcdfghjklmnprstvwxyz]|qu)[aeiou])([bcdfgklmnprtvz]) \\^((ee|[eo]i)(?:[bcdfghjklmnpqrstvwxyz].?)?)$",
+      "replacement": "\\1\\2\\2\\3"
+    },
+    {
+      "pattern": "^(.*(?:[bcdfghjklmnprstvwxyz]|qu)[aeiou])([bcdfgklmnprtvz]) \\^(([aeiouy]|[ai]e)(?:[bcdfghjklmnpqrstvwxyz].?))$",
+      "replacement": "\\1\\2\\2\\3"
+    },
+    {
+      "pattern": "^(.*(?:[bcdfghjklmnprstvwxyz]|qu)[aeiou])([bcdfgklmnprtvz]) \\^(([aeiouy]|[ai]e)(?:[bcdfghjklmnpqrstvwxyz].?))$",
+      "replacement": "\\1\\2\\2\\3"
+    },
+    {
+      "pattern": "^(.*(?:[bcdfghjklmnprstvwxyz]|qu)[aeiou])([bcdfgklmnprtvz]) \\^([ei]?ous)$",
+      "replacement": "\\1\\2\\2\\3"
+    },
+    {
+      "pattern": "^(.*(?:[bcdfghjklmnprstvwxyz]|qu)[aeiou])([bcdfgklmnprtvz]) \\^([ai]ble)$",
+      "replacement": "\\1\\2\\2\\3"
+    },
+    {
+      "pattern": "^(.*(?:[bcdfghjklmnprstvwxyz]|qu)[aeiou])([bcdfgklmnprtvz]) \\^([ae]nce)$",
+      "replacement": "\\1\\2\\2\\3"
+    },
+    {
+      "pattern": "^(.*(?:[bcdfghjklmnprstvwxyz]|qu)[aeiou])([bcdfgklmnprtvz]) \\^(e[rn]ing)$",
+      "replacement": "\\1\\2\\2\\3"
+    },
+    {
+      "pattern": "^(.*(?:[bcdfghjklmnprstvwxyz]|qu)[aeiou])([bcdfgklmnprtvz]) \\^(ation)$",
+      "replacement": "\\1\\2\\2\\3"
+    },
+    {
+      "pattern": "^(.*(?:[bcdfghjklmnprstvwxyz]|qu)[aeiou])([bcdfgklmnprtvz]) \\^(iness)$",
+      "replacement": "\\1\\2\\2\\3"
+    },
+    {
+      "pattern": "^(.*(?:[bcdfghjklmnprstvwxyz]|qu)[aeiou])([bcdfgklmnprtvz]) \\^(ably)$",
+      "replacement": "\\1\\2\\2\\3"
+    },
+    {
+      "pattern": "^(.*(?:[bcdfghjklmnprstvwxyz]|qu)[aeiou])([bcdfgklmnprtvz]) \\^(ened)$",
+      "replacement": "\\1\\2\\2\\3"
+    },
+    {
+      "pattern": "^(.*(?:[bcdfghjklmnprstvwxyz]|qu)[aeiou])([bcdfgklmnprtvz]) \\a^(ings)$",
+      "replacement": "\\1\\2\\2\\3"
+    }
+  ],
+  "aliases": [
+    {
+      "suffix": "able",
+      "alias": "ible"
+    },
+    {
+      "suffix": "ability",
+      "alias": "ibility"
+    }
+  ],
+  "auto-suffix": [],
+  "reverse-auto-suffix": []
+}
