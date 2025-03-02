@@ -1,0 +1,469 @@
+name: "Extended English, Plover Orthography"
+keys:
+  - name: "#"
+    mask: 1
+  - name: "^"
+    mask: 0x800000
+  - name: "+"
+    mask: 0x1000000
+  - name: "1"
+    mask: 3
+  - name: "S"
+    mask: 2
+  - name: "2"
+    mask: 5
+  - name: "T"
+    mask: 4
+  - name: "K"
+    mask: 8
+  - name: "3"
+    mask: 0x11
+  - name: "P"
+    mask: 0x10
+  - name: "W"
+    mask: 0x20
+  - name: "4"
+    mask: 0x41
+  - name: "H"
+    mask: 0x40
+  - name: "R"
+    mask: 0x80
+  - name: "5"
+    mask: 0x101
+  - name: "A"
+    mask: 0x100
+  - name: "0"
+    mask: 0x201
+  - name: "O"
+    mask: 0x200
+  - name: "*"
+    mask: 0x400
+  - name: "-"
+    mask: 0
+    absentMask: 0x1f00
+    presentMask: 0x7fe000
+  - name: "E"
+    mask: 0x800
+  - name: "U"
+    mask: 0x1000
+  - name: "6"
+    mask: 0x2001
+  - name: "F"
+    mask: 0x2000
+  - name: "R"
+    mask: 0x4000
+  - name: "7"
+    mask: 0x8001
+  - name: "P"
+    mask: 0x8000
+  - name: "B"
+    mask: 0x10000
+  - name: "8"
+    mask: 0x20001
+  - name: "L"
+    mask: 0x20000
+  - name: "G"
+    mask: 0x40000
+  - name: "9"
+    mask: 0x80001
+  - name: "T"
+    mask: 0x80000
+  - name: "S"
+    mask: 0x100000
+  - name: "D"
+    mask: 0x200000
+  - name: "Z"
+    mask: 0x400000
+
+undo: "*"
+
+layout:
+  - mask: 1
+    name: "#"
+    center: { "x": 0.45454, "y": 0.06 }
+    path: [
+      { "c": "m", "p": [0.00454, 0] },
+      { "c": "l", "p": [0.99545, 0] },
+      { "c": "l", "p": [0.99545, 0.12] },
+      { "c": "l", "p": [0.00454, 0.12] },
+      { "c": "c" }
+    ]
+  - mask: 0x800000
+    name: "^"
+    center: { "x": 0.04545, "y": 0.275 }
+    path: [
+      { "c": "m", "p": [0.00454, 0.15] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.25] },
+      { "c": "rl", "p": [-0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x1000000
+    name: "+"
+    center: { "x": 0.04545, "y": 0.53 }
+    path: [
+      { "c": "m", "p": [0.00454, 0.41] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.17] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 2
+    name: "S"
+    center: { "x": 0.13636, "y": 0.4 }
+    path: [
+      { "c": "m", "p": [0.09545, 0.15] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.43] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 4
+    name: "T"
+    center: { "x": 0.22727, "y": 0.275 }
+    path: [
+      { "c": "m", "p": [0.18636, 0.15] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.25] },
+      { "c": "rl", "p": [-0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 8
+    name: "K"
+    center: { "x": 0.22727, "y": 0.53 }
+    path: [
+      { "c": "m", "p": [0.18636, 0.41] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.17] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x10
+    name: "P"
+    center: { "x": 0.31818, "y": 0.275 }
+    path: [
+      { "c": "m", "p": [0.27727, 0.15] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.25] },
+      { "c": "rl", "p": [-0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x20
+    name: "W"
+    center: { "x": 0.31818, "y": 0.53 }
+    path: [
+      { "c": "m", "p": [0.27727, 0.41] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.17] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x40
+    name: "H"
+    center: { "x": 0.40909, "y": 0.275 }
+    path: [
+      { "c": "m", "p": [0.36818, 0.15] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.25] },
+      { "c": "rl", "p": [-0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x80
+    name: "R"
+    center: { "x": 0.40909, "y": 0.53 }
+    path: [
+      { "c": "m", "p": [0.36818, 0.41] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.17] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x100
+    name: "A"
+    center: { "x": 0.33636, "y": 0.85 }
+    path: [
+      { "c": "m", "p": [0.29545, 0.73] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.17] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x200
+    name: "O"
+    center: { "x": 0.42727, "y": 0.85 }
+    path: [
+      { "c": "m", "p": [0.38636, 0.73] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.17] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x400
+    name: "*"
+    center: { "x": 0.5, "y": 0.4 }
+    path: [
+      { "c": "m", "p": [0.45909, 0.15] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.43] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x800
+    name: "E"
+    center: { "x": 0.57272, "y": 0.85 }
+    path: [
+      { "c": "m", "p": [0.53181, 0.73] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.17] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x1000
+    name: "U"
+    center: { "x": 0.66363, "y": 0.85 }
+    path: [
+      { "c": "m", "p": [0.62272, 0.73] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.17] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x2000
+    name: "F"
+    center: { "x": 0.59090, "y": 0.275 }
+    path: [
+      { "c": "m", "p": [0.54999, 0.15] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.25] },
+      { "c": "rl", "p": [-0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x4000
+    name: "R"
+    center: { "x": 0.59090, "y": 0.53 }
+    path: [
+      { "c": "m", "p": [0.54999, 0.41] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.17] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x8000
+    name: "P"
+    center: { "x": 0.68181, "y": 0.275 }
+    path: [
+      { "c": "m", "p": [0.64090, 0.15] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.25] },
+      { "c": "rl", "p": [-0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x10000
+    name: "B"
+    center: { "x": 0.68181, "y": 0.53 }
+    path: [
+      { "c": "m", "p": [0.64090, 0.41] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.17] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x20000
+    name: "L"
+    center: { "x": 0.77272, "y": 0.275 }
+    path: [
+      { "c": "m", "p": [0.73181, 0.15] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.25] },
+      { "c": "rl", "p": [-0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x40000
+    name: "G"
+    center: { "x": 0.77272, "y": 0.53 }
+    path: [
+      { "c": "m", "p": [0.73181, 0.41] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.17] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x80000
+    name: "T"
+    center: { "x": 0.86363, "y": 0.275 }
+    path: [
+      { "c": "m", "p": [0.82272, 0.15] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.25] },
+      { "c": "rl", "p": [-0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x100000
+    name: "S"
+    center: { "x": 0.86363, "y": 0.53 }
+    path: [
+      { "c": "m", "p": [0.82272, 0.41] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.17] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x200000
+    name: "D"
+    center: { "x": 0.95454, "y": 0.275 }
+    path: [
+      { "c": "m", "p": [0.91363, 0.15] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.25] },
+      { "c": "rl", "p": [-0.08181, 0] },
+      { "c": "c" }
+    ]
+  - mask: 0x400000
+    name: "Z"
+    center: { "x": 0.95454, "y": 0.53 }
+    path: [
+      { "c": "m", "p": [0.91363, 0.41] },
+      { "c": "rl", "p": [0.08181, 0] },
+      { "c": "rl", "p": [0, 0.17] },
+      { "c": "rq", "p": [0, 0.12, -0.08181, 0.12, -0.08181, 0] },
+      { "c": "c" }
+    ]
+orthography:
+  rules:
+    - pattern: "^(.*[aeiou]c) \\^ly$"
+      replacement: "\\1ally"
+    - pattern: "^(.+[aeioubmnp])le \\^ly$"
+      replacement: "\\1ly"
+    - pattern: "^(.*t)e \\^(a?ry)$"
+      replacement: "\\1ory"
+    - pattern: "^(.+)m \\^tor(il)?y$"
+      replacement: "\\1mator\\2y"
+    - pattern: "^(.+)se \\^ar(y|ies)$"
+      replacement: "\\1sor\\2"
+    - pattern: "^(.*[naeiou])te? \\^cy$"
+      replacement: "\\1cy"
+    - pattern: "^(.*(?:[sz]h?|x)) \\^s$"
+      replacement: "\\1es"
+    - pattern: "^(.*(?:o[aou]|e[ae]|au|[ilnrt])ch) \\^s$"
+      replacement: "\\1es"
+    - pattern: "^(.+[bcdfghjklmnpqrstvwxz])y \\^s$"
+      replacement: "\\1ies"
+    - pattern: "^(.+)ie \\^ing$"
+      replacement: "\\1ying"
+    - pattern: "^(.+[cdfghlmnpr])y \\^ist$"
+      replacement: "\\1ist"
+    - pattern: "^(.+[bcdfghjklmnpqrstvwxz])y \\^([a-hj-xz].*)$"
+      replacement: "\\1i\\2"
+    - pattern: "^(.+)te \\^en$"
+      replacement: "\\1tten"
+    - pattern: "^(.+[ae]) \\^e(ns?)$"
+      replacement: "\\1\\2"
+    - pattern: "^(.+)y \\^ial(ly)?$"
+      replacement: "\\1ial\\2"
+    - pattern: "^(.+)[iy] \\^if(y(?:ing)?|ie[sd]|ications?)$"
+      replacement: "\\1if\\2"
+    - pattern: "^(.+)ic \\^ical(ly)?$"
+      replacement: "\\1ical\\2"
+    - pattern: "^(.+)ology \\^ical(ly)?$"
+      replacement: "\\1ological\\2"
+    - pattern: "^(.*)ry \\^ical(ly|ity)?$"
+      replacement: "\\1rical\\2"
+    - pattern: "^(.*l) \\^(ists?)$"
+      replacement: "\\1\\2"
+    - pattern: "^(.*)ry \\^ity$"
+      replacement: "\\1rity"
+    - pattern: "^(.*)l \\^ity$"
+      replacement: "\\1lity"
+    - pattern: "^(.+)rm \\^tiv(e|ity|ities)$"
+      replacement: "\\1rmativ\\2"
+    - pattern: "^(.+)e \\^tiv(e|ity|ities)$"
+      replacement: "\\1ativ\\2"
+    - pattern: "^(.+)y \\^i([sz](?:e(?:[sdr]|rs)?|ing|ations?|ab(?:le|ility)))$"
+      replacement: "\\1i\\2"
+    - pattern: "^(.+)al \\^i([sz](?:e(?:[sdr]|rs)?|ing|ations?|ms?|ab(?:le|ility|ilities)))$"
+      replacement: "\\1ali\\2"
+    - pattern: "^(.+)ar \\^i([sz](?:e(?:[sdr]|rs)?|ing|ations?|ms?))$"
+      replacement: "\\1ari\\2"
+    - pattern: "^(.*[lmnty]) \\^i([sz](?:e(?:[sdr]|rs)?|ing|ations?|ms?|ab(?:le|ility|ilities)))$"
+      replacement: "\\1i\\2"
+    - pattern: "^(.+)al \\^olog(y|ists?|ical(?:ly)?)$"
+      replacement: "\\1olog\\2"
+    - pattern: "^(.+)([aeo]r) \\^ish$"
+      replacement: "\\1\\2ish"
+    - pattern: "^(.+e)e \\^(e.+)$"
+      replacement: "\\1\\2"
+    - pattern: "^(.+[bcdfghjklmnpqrstuvwxz])e \\^([aeiouy].*)$"
+      replacement: "\\1\\2"
+    - pattern: "^(.*(?:[bcdfghjklmnprstvwxyz]|qu)[aeiou])([bcdfgklmnprtvz]) \\^([aeiouy].*)$"
+      replacement: "\\1\\2\\2\\3"
+  aliases:
+    - suffix: "able"
+      alias: "ible"
+    - suffix: "ability"
+      alias: "ibility"
+  auto-suffix:
+    - key: "-Z"
+      suffix: "{^s}"
+    - key: "-D"
+      suffix: "{^ed}"
+    - key: "-S"
+      suffix: "{^s}"
+    - key: "-G"
+      suffix: "{^ing}"
+  reverse-auto-suffix:
+    - key: "-Z"
+      suppressMask: "-T"
+      pattern: "^(.+)s$"
+      replacement: "\\1"
+    - key: "-Z"
+      suppressMask: "-T"
+      pattern: "^(.+)es$"
+      replacement: "\\1"
+    - key: "-Z"
+      suppressMask: "-T"
+      pattern: "^(.+)ies$"
+      replacement: "\\1y"
+    - key: "-S"
+      suppressMask: "-D"
+      pattern: "^(.+)s$"
+      replacement: "\\1"
+    - key: "-S"
+      suppressMask: "-D"
+      pattern: "^(.+)es$"
+      replacement: "\\1"
+    - key: "-S"
+      suppressMask: "-D"
+      pattern: "^(.+)ies$"
+      replacement: "\\1y"
+    - key: "-D"
+      suppressMask: "-S"
+      pattern: "^(.+)ed$"
+      replacement: "\\1"
+    - key: "-D"
+      suppressMask: "-S"
+      pattern: "^(.+(.))\\2ed$"
+      replacement: "\\1"
+    - key: "-D"
+      suppressMask: "-S"
+      pattern: "^(.+e)d$"
+      replacement: "\\1"
+    - key: "-D"
+      suppressMask: "-S"
+      pattern: "^(.+)ied$"
+      replacement: "\\1y"
+    - key: "-G"
+      suppressMask: ""
+      pattern: "^(.+)ing$"
+      replacement: "\\1"
+    - key: "-G"
+      suppressMask: ""
+      pattern: "^(.+)ing$"
+      replacement: "\\1e"
+    - key: "-G"
+      suppressMask: ""
+      pattern: "^(.+)ying$"
+      replacement: "\\1ie"
+    - key: "-G"
+      suppressMask: ""
+      pattern: "^(.+(.))\\2ing$"
+      replacement: "\\1"
