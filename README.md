@@ -9,6 +9,7 @@ This repository contains system files for use with Javelin's firmware builder.
   keys: [KeyDefinition]
   undo: Stroke
   layout: [Layout]
+  orthography: Orthography
 ```
 
 ## KeyDefinition
