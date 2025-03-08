@@ -2,6 +2,8 @@
 
 This repository contains system files for use with Javelin's firmware builder.
 
+File names are <System>-<Orthography>.yaml.
+
 # Schema
 
 ```
